@@ -47,7 +47,7 @@ void play_game_2() {
     cout << "Lets play!" << endl;
     cout << "Guess a number " << player2 << " : " << endl;
 
-    cout << random << endl;
+    //cout << random << endl;
     while(true) {
         int guess;
         cin >> guess;
