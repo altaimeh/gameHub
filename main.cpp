@@ -5,8 +5,8 @@
 #include <vector>
 #include <fstream>
 #include <string>
-#include "player1.h"
-#include "player2.h"
+#include "player1.cpp"
+#include "shopping1.cpp"
 
 using namespace std;
 
@@ -15,14 +15,15 @@ int main() {
     srand(time(NULL));
     int choice;
     player1 guessing1;
-    player2 guessing2;
+    shopping1 shop1;
+    
     
     do {
         cout << "Welcome to 'Can You Guess The Number!'" << endl;
         cout << "Please choose from the following options" << endl;
         cout << "0. Quit" << endl;
-        cout << "1. Player 1 play the game" << endl;
-        cout << "2. Player 2 play the game" << endl;
+        cout << "1. Play the guessing game" << endl;
+        cout << "2. Play the shopping game" << endl;
         cin >> choice;
         switch(choice) {
             case 0:
@@ -32,11 +33,9 @@ int main() {
                 guessing1.play_game_1();
                 break;
             case 2:
-                guessing2.play_game_2();
+                shop1.shop(); 
                 break;
             }
-    }
-    
-    while(choice != 0);
-
-}
+        }
+        while(choice != 0);
+} 
