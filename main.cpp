@@ -19,7 +19,7 @@ int main() {
     
     
     do {
-        cout << "Welcome to 'Can You Guess The Number!'" << endl;
+        cout << "Welcome to the game room!" << endl;
         cout << "Please choose from the following options" << endl;
         cout << "0. Quit" << endl;
         cout << "1. Play the guessing game" << endl;
@@ -27,7 +27,7 @@ int main() {
         cin >> choice;
         switch(choice) {
             case 0:
-                cout << "Rip...come again!" << endl;
+                cout << ":( until next time!" << endl;
                 return 0;
             case 1:
                 guessing1.play_game_1();
