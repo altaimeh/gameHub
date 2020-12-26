@@ -7,6 +7,7 @@
 #include <string>
 #include "player1.cpp"
 #include "shopping1.cpp"
+#include "fighting1.cpp"
 
 using namespace std;
 
@@ -16,6 +17,7 @@ int main() {
     int choice;
     player1 guessing1;
     shopping1 shop1;
+    fights fighting1;  
     
     
     do {
@@ -24,6 +26,7 @@ int main() {
         cout << "0. Quit" << endl;
         cout << "1. Play the guessing game" << endl;
         cout << "2. Play the shopping game" << endl;
+        cout << "3. Play the fighting game" << endl;
         cin >> choice;
         switch(choice) {
             case 0:
@@ -34,6 +37,9 @@ int main() {
                 break;
             case 2:
                 shop1.shop(); 
+                break;
+            case 3:
+                fighting1.fight();
                 break;
             }
         }
