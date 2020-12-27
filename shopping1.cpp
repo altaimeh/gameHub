@@ -228,6 +228,27 @@ void print_frozen_department() {
     cout << "Please select items to add to cart" << endl;
     cout << "Available items in stock:" << endl;
     cout << endl;
+    cout << "0. Trader Joe's: Chicken Tikka Masala (100), price: $7.99 / packet" << endl;
+    cout << "1. Devour: Buffalo Mac & Cheese (50), price: $9.99 / packet" << endl;
+    cout << "2. Trader Joe's: Mandarin Orange Chicken (100), price: $7.99 / packet" << endl;
+    cout << "3. Trader Joe's: Trader Giotto's Mushroom Ravioli (100), price: $7.99 / packet" << endl;
+    cout << "4. Trader Joe's: Joe's Diner Mac & Cheese (100), price: $7.99 / packet" << endl;
+    cout << "5. Trader Joe's: Black Bean & Corn Enchiladas (100), price: $7.99 / packet" << endl;
+    cout << "6. Amy's: Chile Relleno Casserole Bowls (100), price: $7.99 / bowl" << endl;
+    cout << "7. Stouffer's: Stuffed Peppers (100), price: $7.99 / packet" << endl;
+    cout << "8. Devour: Chicken Enchiladas Suiza (50), price: $9.99 / packet" << endl;
+    cout << "9. Devour: Pesto Ravioli With Spicy Sausage (75), price: 9.99 / packet" << endl;
+    cout << "10. Stouffer's: Lasagna With Meat & Sauce (50), price: $4.99 / packet" << endl;
+    cout << "11. Bertolli: Chicken Parmigiana & Penne (100), price: $8.99 / packet" << endl;
+    cout << "12. Marie Callender's: Family-Size Chicken Pot Pie (100), price: $12.99 / packet" << endl;
+    cout << "13. Amy's: Ravioli Bowls (100), price: $5.99 / bowl" << endl;
+    cout << "14. Healthy Choice: Cafe Steamers Simply Unwrapped Burrito Bowl (100), price: $7.99 / bowl" << endl;
+    cout << "15. Kashi 7 Grain Waffles (100), price: $6.99 / packet" << endl;
+    cout << "16. Healthy Choice Pesto & Egg White Scramble (100), price: $6.99 / price" << endl;
+    cout << "17. Amy's Cheese Pizza (50), price: $6.99 / packet" << endl;
+    cout << "18. SeaPak Salmon Burgers (100), price: $7.99 / packet" << endl;
+    cout << "19. EVOL Vegetable Enchiladas (150), price: $6.99 / packet" << endl;
+    cout << "20. TaDah! Sweet and Spicy Harissa Falafel Wrap (100), price: $8.99 / packet" << endl;
 }
 
 
@@ -1930,6 +1951,287 @@ void shop() {
         }
     }
 
+    if(departments == 9) {
+        print_frozen_department();
+        cin >> decisions;
+        switch(decisions) {
+            case 0: 
+                cout << "How many Trader Joe's: Chicken Tikka Masala packets would you like to buy today?" << endl;
+                cin >> amountBuy;
+                cart.push_back(amountBuy);  
+                cout << "Would you like to check out or return to the list of departments to buy more groceries today?" << endl;
+                cout << "0. Check Out" << endl;
+                cout << "1. return to departments" << endl;
+                cin >> decisionToReturnToMenu;
+                if(decisionToReturnToMenu == 1) {
+                    print_departments();
+                }
+            break;
+
+            case 1: 
+                cout << "How many Devour: Buffalo Mac & Cheese packets would you like to buy today?" << endl;
+                cin >> amountBuy;
+                cart.push_back(amountBuy);  
+                cout << "Would you like to check out or return to the list of departments to buy more groceries today?" << endl;
+                cout << "0. Check Out" << endl;
+                cout << "1. return to departments" << endl;
+                cin >> decisionToReturnToMenu;
+                if(decisionToReturnToMenu == 1) {
+                    print_departments();
+                }
+            break;
+
+            case 2: 
+                cout << "How many Trader Joe's: Mandarin Orange Chicken packets would you like to buy today?" << endl;
+                cin >> amountBuy;
+                cart.push_back(amountBuy);  
+                cout << "Would you like to check out or return to the list of departments to buy more groceries today?" << endl;
+                cout << "0. Check Out" << endl;
+                cout << "1. return to departments" << endl;
+                cin >> decisionToReturnToMenu;
+                if(decisionToReturnToMenu == 1) {
+                    print_departments();
+                }
+            break;
+
+            case 3: 
+                cout << "How many Trader Joe's: Giotto's Mushroom Ravioli packets would you like to buy today?" << endl;
+                cin >> amountBuy;
+                cart.push_back(amountBuy);  
+                cout << "Would you like to check out or return to the list of departments to buy more groceries today?" << endl;
+                cout << "0. Check Out" << endl;
+                cout << "1. return to departments" << endl;
+                cin >> decisionToReturnToMenu;
+                if(decisionToReturnToMenu == 1) {
+                    print_departments();
+                }
+            break;
+
+            case 4: 
+                cout << "How many Trader Joe's: Joe's Diner Mac & Cheese packets would you like to buy today?" << endl;
+                cin >> amountBuy;
+                cart.push_back(amountBuy);  
+                cout << "Would you like to check out or return to the list of departments to buy more groceries today?" << endl;
+                cout << "0. Check Out" << endl;
+                cout << "1. return to departments" << endl;
+                cin >> decisionToReturnToMenu;
+                if(decisionToReturnToMenu == 1) {
+                    print_departments();
+                }
+            break;
+
+            case 5: 
+                cout << "How many Trader Joe's: Black Bean & Corn Enchiladas packets would you like to buy today?" << endl;
+                cin >> amountBuy;
+                cart.push_back(amountBuy);  
+                cout << "Would you like to check out or return to the list of departments to buy more groceries today?" << endl;
+                cout << "0. Check Out" << endl;
+                cout << "1. return to departments" << endl;
+                cin >> decisionToReturnToMenu;
+                if(decisionToReturnToMenu == 1) {
+                    print_departments();
+                }
+            break;
+
+            case 6: 
+                cout << "How many Amy's: Chile Relleno Casserole Bowls would you like to buy today?" << endl;
+                cin >> amountBuy;
+                cart.push_back(amountBuy);  
+                cout << "Would you like to check out or return to the list of departments to buy more groceries today?" << endl;
+                cout << "0. Check Out" << endl;
+                cout << "1. return to departments" << endl;
+                cin >> decisionToReturnToMenu;
+                if(decisionToReturnToMenu == 1) {
+                    print_departments();
+                }
+            break;
+
+            case 7: 
+                cout << "How many Stouffer's: Stuffed Peppers packets would you like to buy today?" << endl;
+                cin >> amountBuy;
+                cart.push_back(amountBuy);  
+                cout << "Would you like to check out or return to the list of departments to buy more groceries today?" << endl;
+                cout << "0. Check Out" << endl;
+                cout << "1. return to departments" << endl;
+                cin >> decisionToReturnToMenu;
+                if(decisionToReturnToMenu == 1) {
+                    print_departments();
+                }
+            break;
+
+            case 8: 
+                cout << "How many Devour: Chicken Enchiladas Suiza packets would you like to buy today?" << endl;
+                cin >> amountBuy;
+                cart.push_back(amountBuy);  
+                cout << "Would you like to check out or return to the list of departments to buy more groceries today?" << endl;
+                cout << "0. Check Out" << endl;
+                cout << "1. return to departments" << endl;
+                cin >> decisionToReturnToMenu;
+                if(decisionToReturnToMenu == 1) {
+                    print_departments();
+                }
+            break;
+
+            case 9: 
+                cout << "How many Devour: Pesto Ravioli with Spicy Sausage packets would you like to buy today?" << endl;
+                cin >> amountBuy;
+                cart.push_back(amountBuy);  
+                cout << "Would you like to check out or return to the list of departments to buy more groceries today?" << endl;
+                cout << "0. Check Out" << endl;
+                cout << "1. return to departments" << endl;
+                cin >> decisionToReturnToMenu;
+                if(decisionToReturnToMenu == 1) {
+                    print_departments();
+                }
+            break;
+
+            case 10: 
+                cout << "How many Stouffer's: Lasagna With Meat & Sauce packets would you like to buy today?" << endl;
+                cin >> amountBuy;
+                cart.push_back(amountBuy);  
+                cout << "Would you like to check out or return to the list of departments to buy more groceries today?" << endl;
+                cout << "0. Check Out" << endl;
+                cout << "1. return to departments" << endl;
+                cin >> decisionToReturnToMenu;
+                if(decisionToReturnToMenu == 1) {
+                    print_departments();
+                }
+            break;
+
+            case 11: 
+                cout << "How many Bertolli: Chicken Parmigiana & Penne packets would you like to buy today?" << endl;
+                cin >> amountBuy;
+                cart.push_back(amountBuy);  
+                cout << "Would you like to check out or return to the list of departments to buy more groceries today?" << endl;
+                cout << "0. Check Out" << endl;
+                cout << "1. return to departments" << endl;
+                cin >> decisionToReturnToMenu;
+                if(decisionToReturnToMenu == 1) {
+                    print_departments();
+                }
+            break;
+
+            case 12: 
+                cout << "How many Marie Callender's: Family-Size Chicken Pot Pie packets would you like to buy today?" << endl;
+                cin >> amountBuy;
+                cart.push_back(amountBuy);  
+                cout << "Would you like to check out or return to the list of departments to buy more groceries today?" << endl;
+                cout << "0. Check Out" << endl;
+                cout << "1. return to departments" << endl;
+                cin >> decisionToReturnToMenu;
+                if(decisionToReturnToMenu == 1) {
+                    print_departments();
+                }
+            break;
+
+            case 13: 
+                cout << "How many Amy's Ravioli Bowls would you like to buy today?" << endl;
+                cin >> amountBuy;
+                cart.push_back(amountBuy);  
+                cout << "Would you like to check out or return to the list of departments to buy more groceries today?" << endl;
+                cout << "0. Check Out" << endl;
+                cout << "1. return to departments" << endl;
+                cin >> decisionToReturnToMenu;
+                if(decisionToReturnToMenu == 1) {
+                    print_departments();
+                }
+            break;
+
+            case 14: 
+                cout << "How many Healthy Choice: Cafe Steamers Simply Unwrapped Burrito Bowls would you like to buy today?" << endl;
+                cin >> amountBuy;
+                cart.push_back(amountBuy);  
+                cout << "Would you like to check out or return to the list of departments to buy more groceries today?" << endl;
+                cout << "0. Check Out" << endl;
+                cout << "1. return to departments" << endl;
+                cin >> decisionToReturnToMenu;
+                if(decisionToReturnToMenu == 1) {
+                    print_departments();
+                }
+            break;
+
+            case 15: 
+                cout << "How many Kashi 7 Grain Waffles packets would you like to buy today?" << endl;
+                cin >> amountBuy;
+                cart.push_back(amountBuy);  
+                cout << "Would you like to check out or return to the list of departments to buy more groceries today?" << endl;
+                cout << "0. Check Out" << endl;
+                cout << "1. return to departments" << endl;
+                cin >> decisionToReturnToMenu;
+                if(decisionToReturnToMenu == 1) {
+                    print_departments();
+                }
+            break;
+
+            case 16: 
+                cout << "How many Healthy Choice Pesto & Egg White Scramble packets would you like to buy today?" << endl;
+                cin >> amountBuy;
+                cart.push_back(amountBuy);  
+                cout << "Would you like to check out or return to the list of departments to buy more groceries today?" << endl;
+                cout << "0. Check Out" << endl;
+                cout << "1. return to departments" << endl;
+                cin >> decisionToReturnToMenu;
+                if(decisionToReturnToMenu == 1) {
+                    print_departments();
+                }
+            break;
+
+            case 17: 
+                cout << "How many Amy's Cheese Pizza packets would you like to buy today?" << endl;
+                cin >> amountBuy;
+                cart.push_back(amountBuy);  
+                cout << "Would you like to check out or return to the list of departments to buy more groceries today?" << endl;
+                cout << "0. Check Out" << endl;
+                cout << "1. return to departments" << endl;
+                cin >> decisionToReturnToMenu;
+                if(decisionToReturnToMenu == 1) {
+                    print_departments();
+                }
+            break;
+
+            case 18: 
+                cout << "How many SeaPak Salmon Burgers packets would you like to buy today?" << endl;
+                cin >> amountBuy;
+                cart.push_back(amountBuy);  
+                cout << "Would you like to check out or return to the list of departments to buy more groceries today?" << endl;
+                cout << "0. Check Out" << endl;
+                cout << "1. return to departments" << endl;
+                cin >> decisionToReturnToMenu;
+                if(decisionToReturnToMenu == 1) {
+                    print_departments();
+                }
+            break;
+
+            case 19: 
+                cout << "How many EVOL Vegetable Enchiladas packets would you like to buy today?" << endl;
+                cin >> amountBuy;
+                cart.push_back(amountBuy);  
+                cout << "Would you like to check out or return to the list of departments to buy more groceries today?" << endl;
+                cout << "0. Check Out" << endl;
+                cout << "1. return to departments" << endl;
+                cin >> decisionToReturnToMenu;
+                if(decisionToReturnToMenu == 1) {
+                    print_departments();
+                }
+            break;
+
+            case 20: 
+                cout << "How many TaDah! Sweet and Spicy Harissa Falafel Wrap packets would you like to buy today?" << endl;
+                cin >> amountBuy;
+                cart.push_back(amountBuy);  
+                cout << "Would you like to check out or return to the list of departments to buy more groceries today?" << endl;
+                cout << "0. Check Out" << endl;
+                cout << "1. return to departments" << endl;
+                cin >> decisionToReturnToMenu;
+                if(decisionToReturnToMenu == 1) {
+                    print_departments();
+                }
+            break;
+
+
+
+        }
+    }
 
 }
 };
